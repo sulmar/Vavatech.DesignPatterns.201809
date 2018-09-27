@@ -10,8 +10,81 @@ namespace Vavatech.DesignPatterns.TemplateMethod
     {
         static void Main(string[] args)
         {
+            CustomerCalculatorTest();
+            HappyHoursCalculatorTest();
 
-            Order order = new Order();
+            CustomerCalculatorObsoleteTest();
+            HappyHoursCalculatorObsoleteTest();
+        }
+
+        private static void HappyHoursCalculatorTest()
+        {
+            Order order = CreateOrder();
+
+            BaseOrderCalculator calculator = new HappyHoursOrderCalculator(
+                    TimeSpan.FromHours(9.5),
+                    TimeSpan.FromHours(17),
+                    0.1m);
+
+            calculator.CalculateDiscount(order);
+
+            Console.WriteLine($"Total: {order.TotalAmount} " +
+                $"Discount: {order.DiscountAmount} " +
+                $"Final: {order.FinalAmount}");
+        }
+
+        private static void CustomerCalculatorTest()
+        {
+            Order order = CreateOrder();
+
+            BaseOrderCalculator calculator = new CustomerOrderCalculator("a", 20m);
+
+            calculator.CalculateDiscount(order);
+
+            Console.WriteLine($"Total: {order.TotalAmount} " +
+                $"Discount: {order.DiscountAmount} " +
+                $"Final: {order.FinalAmount}");
+        }
+
+        private static void HappyHoursCalculatorObsoleteTest()
+        {
+            Order order = CreateOrder();
+
+            IOrderCalculator calculator = new HappyHoursOrderCalculatorObsolete(
+                    TimeSpan.FromHours(9.5),
+                    TimeSpan.FromHours(17),
+                    0.1m);
+
+            calculator.CalculateDiscount(order);
+
+            Console.WriteLine($"Total: {order.TotalAmount} " +
+                $"Discount: {order.DiscountAmount} " +
+                $"Final: {order.FinalAmount}");
+        }
+
+        private static void CustomerCalculatorObsoleteTest()
+        {
+            Order order = CreateOrder();
+
+            IOrderCalculator calculator = new CustomerOrderCalculatorObsolete("a", 20m);
+
+            calculator.CalculateDiscount(order);
+
+            Console.WriteLine($"Total: {order.TotalAmount} " +
+                $"Discount: {order.DiscountAmount} " +
+                $"Final: {order.FinalAmount}");
+        }
+
+        private static Order CreateOrder()
+        {
+            Customer customer = new Customer("Anna", "Smith");
+
+            Order order = new Order
+            {
+                OrderDate = DateTime.Parse("2018-09-27 9:30"),
+                Customer = customer
+            };
+
 
             Product product = new Product
             {
@@ -29,8 +102,7 @@ namespace Vavatech.DesignPatterns.TemplateMethod
 
             order.AddDetail(product, 5);
             order.AddDetail(product2, 3);
-
-            Console.WriteLine(order.TotalAmount);
+            return order;
         }
     }
 
@@ -38,13 +110,19 @@ namespace Vavatech.DesignPatterns.TemplateMethod
     {
         public int Id { get; set; }
         public DateTime OrderDate { get; set; }
+        public Customer Customer { get; set; }
+
         public IList<OrderDetail> Details { get; set; } = new List<OrderDetail>();
 
         public decimal TotalAmount => Details.Sum(d => d.Amount);
 
+        public decimal DiscountAmount { get; set; }
+
+        public decimal FinalAmount => TotalAmount - DiscountAmount;
+
         public Order()
         {
-            OrderDate = DateTime.Today;
+            OrderDate = DateTime.Now;
         }
 
         public void AddDetail(Product product, int quantity)
@@ -73,6 +151,19 @@ namespace Vavatech.DesignPatterns.TemplateMethod
         public decimal Amount => UnitPrice * Quantity;
 
         
+    }
+
+
+    public class Customer
+    {
+        public Customer(string firstName, string lastName)
+        {
+            FirstName = firstName;
+            LastName = lastName;
+        }
+
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 
     public class Product

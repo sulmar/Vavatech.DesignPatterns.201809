@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30AF0FE8-90B1-4C3E-A813-40C40590DD8B}</ProjectGuid>
+    <ProjectGuid>{AAE8B8DB-ABE4-4268-B3D0-544F564113DA}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Vavatech.DesignPatterns.TemplateMethod</RootNamespace>
-    <AssemblyName>Vavatech.DesignPatterns.TemplateMethod</AssemblyName>
+    <RootNamespace>Vavatech.DesignPatterns.Strategy</RootNamespace>
+    <AssemblyName>Vavatech.DesignPatterns.Strategy</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,7 +43,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IOrderCalculator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

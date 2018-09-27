@@ -21,6 +21,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.DesignPatterns.Com
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.DesignPatterns.TemplateMethod", "Vavatech.DesignPatterns.TemplateMethod\Vavatech.DesignPatterns.TemplateMethod.csproj", "{30AF0FE8-90B1-4C3E-A813-40C40590DD8B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.DesignPatterns.Strategy", "Vavatech.DesignPatterns.Strategy\Vavatech.DesignPatterns.Strategy.csproj", "{AAE8B8DB-ABE4-4268-B3D0-544F564113DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.DesignPatterns.Decorator", "Vavatech.DesignPatterns.Decorator\Vavatech.DesignPatterns.Decorator.csproj", "{B9941967-43F7-4F08-81B6-CD1C7B5EB01F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.DesignPatterns.Memento", "Vavatech.DesignPatterns.Memento\Vavatech.DesignPatterns.Memento.csproj", "{447FE4CE-DC19-49AA-9BB1-7ABB17044CB4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +57,18 @@ Global
 		{30AF0FE8-90B1-4C3E-A813-40C40590DD8B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{30AF0FE8-90B1-4C3E-A813-40C40590DD8B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{30AF0FE8-90B1-4C3E-A813-40C40590DD8B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAE8B8DB-ABE4-4268-B3D0-544F564113DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAE8B8DB-ABE4-4268-B3D0-544F564113DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAE8B8DB-ABE4-4268-B3D0-544F564113DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAE8B8DB-ABE4-4268-B3D0-544F564113DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9941967-43F7-4F08-81B6-CD1C7B5EB01F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9941967-43F7-4F08-81B6-CD1C7B5EB01F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9941967-43F7-4F08-81B6-CD1C7B5EB01F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9941967-43F7-4F08-81B6-CD1C7B5EB01F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{447FE4CE-DC19-49AA-9BB1-7ABB17044CB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{447FE4CE-DC19-49AA-9BB1-7ABB17044CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{447FE4CE-DC19-49AA-9BB1-7ABB17044CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{447FE4CE-DC19-49AA-9BB1-7ABB17044CB4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +80,9 @@ Global
 		{6DF97DAC-0278-4238-86BE-8D8F0DEFF679} = {550B21FC-A919-4144-825D-24D711DDEB4A}
 		{BD94044F-1905-433E-A2C3-979B3CFC4A23} = {2D635EA5-21AA-4F82-9FE3-3D79394B9AEE}
 		{30AF0FE8-90B1-4C3E-A813-40C40590DD8B} = {2D635EA5-21AA-4F82-9FE3-3D79394B9AEE}
+		{AAE8B8DB-ABE4-4268-B3D0-544F564113DA} = {2D635EA5-21AA-4F82-9FE3-3D79394B9AEE}
+		{B9941967-43F7-4F08-81B6-CD1C7B5EB01F} = {2D635EA5-21AA-4F82-9FE3-3D79394B9AEE}
+		{447FE4CE-DC19-49AA-9BB1-7ABB17044CB4} = {2D635EA5-21AA-4F82-9FE3-3D79394B9AEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4EB98042-24FF-4D8A-B682-2DF2CEE44FF2}

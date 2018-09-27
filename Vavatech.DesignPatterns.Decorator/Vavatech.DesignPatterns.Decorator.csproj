@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{30AF0FE8-90B1-4C3E-A813-40C40590DD8B}</ProjectGuid>
+    <ProjectGuid>{B9941967-43F7-4F08-81B6-CD1C7B5EB01F}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Vavatech.DesignPatterns.TemplateMethod</RootNamespace>
-    <AssemblyName>Vavatech.DesignPatterns.TemplateMethod</AssemblyName>
+    <RootNamespace>Vavatech.DesignPatterns.Decorator</RootNamespace>
+    <AssemblyName>Vavatech.DesignPatterns.Decorator</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -44,6 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IOrderCalculator.cs" />
+    <Compile Include="Models\Customer.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderDetail.cs" />
+    <Compile Include="Models\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
