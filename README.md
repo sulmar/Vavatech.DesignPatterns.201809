@@ -1,9 +1,13 @@
 
 # Wzorce projektowe
 
-## Links
 
+### Płatek śniegu
 - https://refactoring.guru/design-patterns/flyweight
+
+- http://gameprogrammingpatterns.com/flyweight.html
+
+## Diagram
 
 - http://www.webgraphviz.com/
 - https://dreampuf.githubio/GraphvizOnline/
