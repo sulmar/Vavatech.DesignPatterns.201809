@@ -36,6 +36,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.DesignPatterns.Observer", "Vavatech.DesignPatterns.Observer\Vavatech.DesignPatterns.Observer.csproj", "{287556E7-7DCA-4A5E-8282-FA4381000D51}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.DesignPatterns.FluentApi", "Vavatech.DesignPatterns.FluentApi\Vavatech.DesignPatterns.FluentApi.csproj", "{C50557E9-8828-4E1F-B75C-2B7B85B4BF36}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vavatech.DesignPatterns.Iterator", "Vavatech.DesignPatterns.Iterator\Vavatech.DesignPatterns.Iterator.csproj", "{A0BA59C3-0B26-49BF-8F83-304371B9D803}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -86,6 +92,18 @@ Global
 		{66AFDFAC-1BDB-445E-9E7B-0709C073EB65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{66AFDFAC-1BDB-445E-9E7B-0709C073EB65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{66AFDFAC-1BDB-445E-9E7B-0709C073EB65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{287556E7-7DCA-4A5E-8282-FA4381000D51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{287556E7-7DCA-4A5E-8282-FA4381000D51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{287556E7-7DCA-4A5E-8282-FA4381000D51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{287556E7-7DCA-4A5E-8282-FA4381000D51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C50557E9-8828-4E1F-B75C-2B7B85B4BF36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C50557E9-8828-4E1F-B75C-2B7B85B4BF36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C50557E9-8828-4E1F-B75C-2B7B85B4BF36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C50557E9-8828-4E1F-B75C-2B7B85B4BF36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0BA59C3-0B26-49BF-8F83-304371B9D803}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0BA59C3-0B26-49BF-8F83-304371B9D803}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0BA59C3-0B26-49BF-8F83-304371B9D803}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0BA59C3-0B26-49BF-8F83-304371B9D803}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -102,6 +120,9 @@ Global
 		{447FE4CE-DC19-49AA-9BB1-7ABB17044CB4} = {2D635EA5-21AA-4F82-9FE3-3D79394B9AEE}
 		{9BEFC472-C043-42C7-97BA-BD8AEA46D9F6} = {550B21FC-A919-4144-825D-24D711DDEB4A}
 		{66AFDFAC-1BDB-445E-9E7B-0709C073EB65} = {2D635EA5-21AA-4F82-9FE3-3D79394B9AEE}
+		{287556E7-7DCA-4A5E-8282-FA4381000D51} = {2D635EA5-21AA-4F82-9FE3-3D79394B9AEE}
+		{C50557E9-8828-4E1F-B75C-2B7B85B4BF36} = {895B3F10-35BA-4C9F-9EE8-B1C693D06835}
+		{A0BA59C3-0B26-49BF-8F83-304371B9D803} = {2D635EA5-21AA-4F82-9FE3-3D79394B9AEE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4EB98042-24FF-4D8A-B682-2DF2CEE44FF2}
